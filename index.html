@@ -5,21 +5,45 @@
     <link rel="stylesheet" href="functions.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Functions</title>
+    <script src="functions.js"></script>
+    <title>Tempature Converter</title>
 </head>
 
+
 <body>
-    <div>
-        <h1 class="title">Functions</h1>
-        <h1 class="list">List</h1>
-        <ul></ul>
-        <input type="text" placeholder="Enter text"><button onclick="showList()">Submit</button>
-        <img id="img" src="guy.png" alt="img" height="300" width="300">
-        <button onclick="changeText()">Click</button>
-        <button class="reset" onclick="resetText()" onclick="showList()" >Reset</button>
-        <button  onclick="showImage()">Show pic</button>
+    <div class="container">
+       
+            <div class="notifications">
+                    <p id="time" onchange="Date()">10:54</p>
+                    <img src="/vecteezy_signal-flat-color-outline-icon_19858869.png" height="25" width="25">
+                <img src="/symbole-wifi-icone-png-gris.png" height="25" width="25">
+                <img src="/664886.png" height="25" width="25">
+            </div>
+            <h2>Tempature Converter</h2>
+            <div>
+            <form>
+                <div class="degree-type">
+                    <div class="degree">
+                        <label for="temp">Degrees</label><br>
+                        <input type="number" id="input"><br>
+                    </div>
+                    <div class="temp">
+                        <label>Type</label><br>
+                        <select id="type">
+                            <option>Celsius</option>
+                            <option>Fahrenheit</option>
+                        </select><br>
+                    </div>
+                </div>
+                <label>Result</label><br><br>
+                <div class="result-button">
+                    <input id="result"></input><br><br>
+                    <button type="button" onclick="tempatureConverter()">Convert</button>
+               
+            </form>
+        </div>
+        </div>
     </div>
-    <script src="Functions.js"></script>
 </body>
 
 </html>
