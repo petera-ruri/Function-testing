@@ -10,3 +10,19 @@ function tempatureConverter() {
     document.getElementById("result").value = convertedValue;
 
 }
+
+// Ensure the DOM is fully loaded before accessing elements
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the element by ID
+    var element = document.getElementById("time");
+    var d = new Date();
+    // Check if the element exists
+    if (element) {
+        // If it exists, set its innerHTML
+        element.innerText = d.toLocaleTimeString().replace("AM" ,"");
+    } else {
+        console.error("Element with ID 'myElement' not found.");
+    }
+});
+
+

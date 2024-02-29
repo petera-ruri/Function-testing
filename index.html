@@ -14,7 +14,7 @@
     <div class="container">
        
             <div class="notifications">
-                    <p id="time" onchange="Date()">10:54</p>
+                    <p id="time" onload=""></p>
                     <img src="/vecteezy_signal-flat-color-outline-icon_19858869.png" height="25" width="25">
                 <img src="/symbole-wifi-icone-png-gris.png" height="25" width="25">
                 <img src="/664886.png" height="25" width="25">
@@ -28,14 +28,14 @@
                         <input type="number" id="input"><br>
                     </div>
                     <div class="temp">
-                        <label>Type</label><br>
+                        <label class="type-font">Type</label><br>
                         <select id="type">
                             <option>Celsius</option>
                             <option>Fahrenheit</option>
                         </select><br>
                     </div>
                 </div>
-                <label>Result</label><br><br>
+                <label class="result-font">Result</label><br><br>
                 <div class="result-button">
                     <input id="result"></input><br><br>
                     <button type="button" onclick="tempatureConverter()">Convert</button>
